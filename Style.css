@@ -32,6 +32,10 @@ h1 span {
   color: #2e90d8;
 }
 
+ul li {
+  list-style: none;
+}
+
 .btn {
   background-color: #e82849;
   padding: 1rem 2rem;
@@ -281,13 +285,156 @@ h1 span {
 
 .more {
   margin: 3rem auto;
-  background-color: rgb(248, 242, 242);
+  background-color: rgb(248, 247, 247);
   color: #e82849;
   display: block;
 }
 
+.more:hover {
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+}
+
 .more span {
   margin: 0 0.5rem;
+}
+
+.faq-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-input {
+  margin: 1rem 0;
+}
+
+.faq-heading h1 {
+  line-height: 1.7;
+}
+
+.faq-heading h1 span {
+  color: #e82849;
+}
+
+.faq-heading h1 img {
+  max-width: 10%;
+}
+
+.form-input input {
+  padding: 1.1rem;
+  border-radius: 5px;
+  width: 75%;
+  position: relative;
+  font-size: 1rem;
+  border: 1px solid #a8a7ab;
+}
+
+.faq-heading .search {
+  font-size: 1.3rem;
+  padding: 1rem 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.accordion {
+  max-width: 800px;
+}
+
+.accordion .accord-card {
+  position: relative;
+  margin: 1rem 1.1rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 5%);
+}
+
+.accord-card .accord-title {
+  position: relative;
+  padding: 2rem;
+  cursor: pointer;
+  color: #22232f;
+  font-size: 1.2rem;
+}
+
+.accord-card .accord-title::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  overflow-y: auto;
+}
+
+.accord-card.active .accord-title::before {
+  content: "-";
+}
+
+.accord-card .content {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accord-card.active .content {
+  height: 5rem;
+  padding: 0.5rem 2rem;
+}
+
+.subscribe {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  max-width: 15rem;
+}
+
+.subscribe .details img {
+  max-width: 10rem;
+}
+
+.subscribe .details p {
+  font-size: 1.1rem;
+  color: #22232f;
+  margin: 1rem 0;
+}
+
+.social-logo i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.subscribe .external-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li:first-child {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+ul li {
+  margin: 1.2rem 2.5rem;
+}
+
+.newsletter h4 {
+  font-size: 1.5rem;
+  color: #22232f;
+}
+
+.newsletter p {
+  margin: 0.5rem 0;
+}
+
+.newsletter input {
+  padding: 1rem;
+  border-radius: 5px;
+  width: 60%;
+  font-size: 0.9rem;
+  border: 1px solid #a8a7ab;
+  margin-right: 0.3rem;
 }
 
 .copyright {
