@@ -5,23 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Wibustrez</title>
 </head>
 
 <body>
-    <header class="header-menu">
-        <nav>
-            <a href="#homepage" class="logo"><img src="./Images/Logo.png" alt="Wibustrez Logo"></a>
-            <a href="#homepage">Home</a>
-            <a href="#service">How It Works</a>
-            <a href="#features">Featured</a>
-            <a href="#blogs">Testimonial</a>
-            <a href="#article">Blog</a>
-            <a href="#faq-subscribe">Subscribe & FAQ</a>
-            <button class="btn">Sign In</button>
-        </nav>
+    <header class="header">        
+        <nav class="navbar" id="nav">
+            <a href="#homepage" class="logo"><img src="./Images/Logo.png" alt="Wibustrez Logo" loading="lazy"></a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#homepage" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#service" class="nav-link">How It Works</a></li>
+            <li class="nav-item"><a href="#features" class="nav-link">Featured</a></li>
+            <li class="nav-item"><a href="#blogs" class="nav-link">Testimonial</a></li>
+            <li class="nav-item"><a href="#article" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="#faq-subscribe" class="nav-link">Subscribe & FAQ</a></li>
+            <li class="nav-item"><button class="btn" class="nav-link">Sign In</button></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
     </header>
     <main>
         <section id="homepage">
@@ -33,14 +40,14 @@
                     
                     <button class="btn">Learn More</button>
                 </div>
-                <img src="./Images/homepage.png" alt="Homepage Image">
+                <img src="./Images/homepage.png" alt="Homepage Image" loading="lazy">
             </div>
         </section>
         <div class="airline-logos">
-            <img src="./Images/allianz.png" alt="Allianz logo">
-            <img src="./Images/garuda.png" alt="Garuda Indonesia">
-            <img src="./Images/swans.png" alt="Swans logo">
-            <img src="./Images/united.png" alt="United Airlines">
+            <img src="./Images/allianz.png" alt="Allianz logo" loading="lazy">
+            <img src="./Images/garuda.png" alt="Garuda Indonesia" loading="lazy">
+            <img src="./Images/jal.png" alt="Swans logo" loading="lazy">
+            <img src="./Images/united.png" alt="United Airlines" loading="lazy">
         </div>
         <section id="service">
             <div class="service-container">
@@ -58,17 +65,17 @@
                     <div class="card">
                         <span class="card-favicon"><i class="fas fa-briefcase"></i></span>
                         <h3 class="card-title">Preparation to go</h3>
-                        <p>We will help you with all your holiday needs</p>
+                        <p>Order in advance, don't worry, it's not complicated</p>
                     </div>
                     <div class="card">
                         <span class="card-favicon"><i class="fas fa-map-marker-alt"></i></span>
                         <h3 class="card-title">Go to destination</h3>
-                        <p>We are with you all the time when you start</p>
+                        <p>Order in advance, don't worry, it's not complicated</p>
                     </div>
                     <div class="card">
                         <span class="card-favicon"><i class="fas fa-glass-cheers"></i></span>
                         <h3 class="card-title">Enjoy you vacation</h3>
-                        <p>If there is something, we are always there</p>
+                        <p>Order in advance, don't worry, it's not complicated</p>
                     </div>
                 </div>
             </div>
@@ -77,7 +84,7 @@
             <div class="features-container">
             <h1 class="feature-heading"><span>Features</span> that we provide for you</h1>
             <div class="feature-card">
-                <img src="./Images/destination.png" alt="Destinations Features" class="card-img">
+                <img src="./Images/destination.png" alt="Destinations Features" class="card-img" loading="lazy">
                 <div class="card-details">
                     <h3>Perfect destination for vacation with family</h3>
                     <p>The perfect family gateway is to japan and tell them all about your trip so they'll be jealous. Enjoy your journey with Wibustrez.</p>
@@ -85,15 +92,15 @@
                 </div>
             </div>
             <div class="feature-card">
+                <img src="./Images/requirements.png" alt="Requirements Features" class="card-img" loading="lazy">
                 <div class="card-details">
                     <h3>Ease of booking destinations on our website</h3>
                     <p>We promis you that our ordering service is the best among the best. We are ready to be responsible if you are not satisfied.</p>
                     <button class="btn">See Requirements</button>    
                 </div>
-                <img src="./Images/requirements.png" alt="Requirements Features" class="card-img">
             </div>
             <div class="feature-card">
-                <img src="./Images/testimonial.png" alt="Testimonial Features" class="card-img">
+                <img src="./Images/testimonial.png" alt="Testimonial Features" class="card-img" loading="lazy">
                 <div class="card-details">
                     <h3>Trusted by millions of users who want to travel</h3>
                     <p>All users are satisfied with us, be of the millions of users who use our services. We will serve us to the best of our ability.</p>
@@ -111,8 +118,8 @@
                 </div>
                 <div class="blog-cards">
                     <div class="card">
-                    <div class="card-details">
-                        <img src="./Images/comment-one.png" alt="Comment One">
+                    <div class="card-heading">
+                        <img src="./Images/comment-one.png" alt="Comment One" loading="lazy">
                         <h4 class="person-name">Sasuke Uciha <br/><span>Jakarta, IND</span></h4>
                     </div>
                     <p class="blog-description">
@@ -121,8 +128,8 @@
                 </div>
                 <div class="blog-cards">
                     <div class="card">
-                        <div class="card-details">
-                            <img src="./Images/comment-two.png" alt="Comment Two">
+                        <div class="card-heading">
+                            <img src="./Images/comment-two.png" alt="Comment Two" loading="lazy">
                             <h4 class="person-name">Itachi Uciha <br/><span>Jakarta, IND</span></h4>
                         </div>
                         <p class="blog-description">
@@ -138,21 +145,21 @@
             <h1 class="article-heading"><span>Article About Us</span></h1>
             <div class="article-cards">
                 <div class="art-card">
-                    <img src="./Images/artical-one.png" alt="Article One" class="art-img">
+                    <img src="./Images/artical-one.png" alt="Article One" class="art-img" loading="lazy">
                     <p>12 Jan 2021</p>
                     <h3>Can we get women on Tokyo?</h3>
                     <p>Japan, island country lying off the east coast of Asia</p>
                     <button class="btn">Read Article</button>
                 </div>
                 <div class="art-card">
-                    <img src="./Images/artical-two.png" alt="Article One" class="art-img">
+                    <img src="./Images/artical-two.png" alt="Article One" class="art-img" loading="lazy">
                     <p>12 Jan 2021</p>
                     <h3>Want to know about Japan? let's read first!</h3>
                     <p>Japan, island country lying off the east coast of Asia</p>
                     <button class="btn">Read Article</button>
                 </div>
                 <div class="art-card">
-                    <img src="./Images/artical-three.png" alt="Article One" class="art-img">
+                    <img src="./Images/artical-three.png" alt="Article One" class="art-img" loading="lazy">
                     <p>12 Jan 2021</p>
                     <h3>What punishment does Juliari deserve?</h3>
                     <p>Japan, island country lying off the east coast of Asia</p>
@@ -168,7 +175,7 @@
                     <h1>Have a <span>Question?</span></h1>
                     <h1>look here <img src="./Images/thunder.png" alt="Thunder"></h1>
                     <form class="form-input">
-                        <input type="text" placeholder="Search Your Question">
+                        <input type="text" placeholder="Search Your Question" required>
                         <button type="submit" class="btn search"><i class="fas fa-search"></i></button>
                     </form>
                     <button class="btn more">See more question<span><i class="fas fa-external-link-alt"></i></button>
@@ -196,7 +203,7 @@
             </div>
             <div class="subscribe">
                 <div class="details">
-                    <img src="./Images/Logo.png" alt="Company Logo">
+                    <img src="./Images/Logo.png" alt="Company Logo" loading="lazy">
                     <p>Over 8,912,000 satisfied with our appearance</p>
                     <div class="social-logo">
                         <span><i class="fab fa-facebook-square"></i></span>
@@ -222,7 +229,7 @@
                     <h4>Subscribe to new Newsletter</h4>
                     <p>What are you waiting for? Order and follow our progess!</p>
                     <form>
-                        <input type="email" placeholder="email@example.com">
+                        <input type="email" placeholder="email@example.com" required>
                         <button type="submit" class="btn">Subscribe now</button>
                     </form>
                 </div>
@@ -232,10 +239,10 @@
     <footer>
         <div class="copyright">
             <p>&#169; Copyright 2021</p>
-            <img src="./Images/Logo.png" alt="Footer Logo"></p>
+            <img src="./Images/Logo.png" alt="Footer Logo" loading="lazy"></p>
         </div>
     </footer>
-    <script src="Script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
